@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form-control {
+        display: flex;
+        gap: 8px;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .form-control__lable {
+        min-width: 100px;
+    }
+
+    .error {
+        border: 1px solid red;
+    }
+</style>
+
+<body>
+    <form class="form" action="submit.html" method="GET">
+        <div class="form-control">
+            <label class="form-control__lable" for="login">Логин</label><input id="login" type="text" name="login">
+        </div>
+        <div class="form-control">
+            <label class="form-control__lable" for="password">Пароль</label><input id="password" type="text"
+                name="password">
+        </div>
+
+
+        <button>Отправить</button>
+    </form>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
