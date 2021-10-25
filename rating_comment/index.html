@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<style>
+    .form-control {
+        display: flex;
+        gap: 8px;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .form-control__lable {
+        min-width: 100px;
+    }
+
+    .error {
+        border: 1px solid red;
+    }
+
+    .fa-star {
+        color: yellow;
+    }
+
+    .rating input {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: row;
+        max-width: 100px;
+    }
+</style>
+
+<body>
+    <form class="form" action="submit.html" method="GET">
+
+        <div class="rating">
+            <div class="form-control">
+                <input type="radio" id="rating_1" name="rating" value="1">
+                <label for="rating_1"><i class="fa fa-star-o" data-rating="1"></i></label>
+            </div>
+            <div class="form-control">
+                <input type="radio" id="rating_2" name="rating" value="2">
+                <label for="rating_2"><i class="fa fa-star-o" data-rating="2"></i></label>
+            </div>
+
+            <div class="form-control">
+                <input type="radio" id="rating_3" name="rating" value="3">
+                <label for="rating_3"><i class="fa fa-star-o" data-rating="3"></i></label>
+            </div>
+
+
+            <div class="form-control">
+                <input type="radio" id="rating_4" name="rating" value="4">
+                <label for="rating_4"><i class="fa fa-star-o" data-rating="4"></i></label>
+            </div>
+
+            <div class="form-control">
+                <input type="radio" id="rating_5" name="rating" value="5">
+                <label for="rating_5"><i class="fa fa-star-o" data-rating="5"></i></label>
+            </div>
+
+
+        </div>
+        <div class="form-control">
+            <textarea id="comment" name="comment"></textarea>
+        </div>
+        <button>Отправить</button>
+    </form>
+
+
+    <script src="https://use.fontawesome.com/366425369e.js"></script>
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>

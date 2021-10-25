@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form-control {
+        display: flex;
+        gap: 8px;
+        max-width: 350px;
+        margin-bottom: 4px;
+    }
+
+    .error {
+        outline: 1px solid red;
+    }
+</style>
+
+<body>
+    <form class="form" action="submit.html" method="GET">
+
+        <div class="form-control">
+            <label class="form-control_label">Пол: </label>
+            <label for="man">Мужской</label><input type="radio" name="gender" value="man">
+            <label for="woman">Женский</label><input type="radio" name="gender" value="woman">
+        </div>
+
+        <button>Отправить</button>
+    </form>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

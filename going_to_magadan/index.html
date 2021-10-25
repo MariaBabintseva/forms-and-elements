@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form-control {
+        display: flex;
+        gap: 8px;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .form-control__lable {
+        min-width: 100px;
+    }
+
+    .error {
+        border: 1px solid red;
+    }
+</style>
+
+<body>
+    <form class="form" action="city.html" method="GET">
+        <div class="form-control">
+            <label class="form-control__lable" for="cities">Город</label>
+            <select name="city">
+                <option value="">Выберите город...</option>
+                <option value="Moscow">Москва</option>
+                <option value="Sankt-Peterburg">Санкт-Петербург</option>
+                <option value="Nizhny Novgorod">Нижний Новгород</option>
+                <option value="Sochi">Сочи</option>
+                <option value="Adler">Адлер</option>
+            </select>
+        </div>
+        <button>Отправить</button>
+    </form>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
