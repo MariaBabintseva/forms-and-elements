@@ -25,21 +25,6 @@ function fieldValidation(name, value) {
 
 
 form.addEventListener('submit', function (e) {
-    console.log(e)
-
-    /* const option = document.querySelectorAll('option')
- 
-     for (let i = 0; i < option.length; i++) {
-         console.log(option[i].textContent)
-     }*/
-
-    for (const element of form.elements) {
-
-
-        console.log(element);
-    }
-
-
     let valid = true;
 
     for (const element of form.elements) {
