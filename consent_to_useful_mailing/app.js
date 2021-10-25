@@ -17,22 +17,14 @@ function hideError(element) {
 }
 
 
-function checkedValidation(value) {
-    return value;
-}
-
 function fieldValidation(name, value) {
-    switch (name) {
-        case 'agreement':
-            return checkedValidation(value)
-        default:
-            return true;
+    if (name === 'agreement') {
+        return value;
     }
 }
 
 
 form.addEventListener('submit', function (e) {
-    console.log(form.elements)
     let valid = true;
 
     for (const element of form.elements) {
@@ -40,13 +32,6 @@ form.addEventListener('submit', function (e) {
             continue;
         }
         hideError(element)
-    }
-
-
-    for (const element of form.elements) {
-        if (!element.name) {
-            continue;
-        }
 
         const value = element.checked
 
@@ -63,8 +48,6 @@ form.addEventListener('submit', function (e) {
 
 
 form.addEventListener('change', function (e) {
-    console.log(e)
-
     const element = e.target
 
     hideError(element)
